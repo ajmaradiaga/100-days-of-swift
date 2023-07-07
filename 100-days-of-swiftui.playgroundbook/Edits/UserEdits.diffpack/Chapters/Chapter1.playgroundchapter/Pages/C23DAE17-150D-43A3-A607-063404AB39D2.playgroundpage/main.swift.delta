@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>
+let tempInCelsius: Double = 25
+
+var tempInFarenheit = ((tempInCelsius * 9) / 5) + 32
+
+print(tempInFarenheit)
+
+let sayHello = { (name: String? ) -&gt; Int in
+    var value = "closure"
+    var vc  = 0
+    if (name != nil) {
+       value = name!
+        vc = value.count
+    }
+    print("Hi \(value)!")
+    return vc
+}
+
+var x = sayHello(nil)
+
+print(x)
+let  team = ["Gloria", "Suzanne", "Piper", "Tiffany", "Tasha"]
+
+print(team.count)
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 429}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

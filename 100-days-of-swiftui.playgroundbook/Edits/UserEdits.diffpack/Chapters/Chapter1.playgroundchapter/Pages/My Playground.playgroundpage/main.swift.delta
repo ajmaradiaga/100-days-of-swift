@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let team = ["Gloria", "Suzanne", "Piper", "Tiffany", "Tasha"]
+
+print(team.sorted())
+
+struct Album {
+    let title: String
+    let artist: String
+    var year: Int = 2023
+
+    func printSummary() {
+        print("\(title) (\(year)) by \(artist)")
+    }
+    
+    mutating func setNewYear(y: Int) {
+        year = y
+    }
+}
+
+var red = Album.init(title: "Red", artist: "Taylor Swift", year: 2012)
+let wings = Album(title: "Wings", artist: "BTS", year: 2016)
+
+print(red)
+
+red.setNewYear(y: 2020)
+
+print(red)
+
+enum ScoreError: Error {
+    case NegativeValue
+}
+
+struct Game {
+    var score = 0 {
+        didSet {
+            print("Score is now \(score), previous value \(oldValue)")
+        }
+    }
+}
+
+var game = Game()
+game.score += 10
+game.score -= 3
+game.score += 1
+
+struct School {
+    static var studentCount = 0
+
+    static func add(student: String) {
+        print("\(student) joined the school.")
+        studentCount += 1
+    }
+}
+
+School.add(student: "Taylor Swift")
+print(School.studentCount)
+
+School.add(student: "Taylor Swift")
+print(School.studentCount)
+
+
+enum CarGearError: Error {
+    case ExceedMaximumNumberOfGears
+}
+
+struct Car {
+    let model: String
+    let numberOfSeats: Int
+    let maximumNumberOfGears: Int
+    private(set) var currentGear: Int = 0
+    
+    mutating func gearUp() throws{
+        if currentGear &lt; maximumNumberOfGears {
+            currentGear += 1
+        }else {
+            throw CarGearError.ExceedMaximumNumberOfGears
+        }
+        
+    }
+    
+    mutating func gearDown() {
+        currentGear -= 1
+    }
+}
+
+var vwTiguan = Car(model: "Tiguan", numberOfSeats: 5, maximumNumberOfGears: 1)
+
+do {
+    try vwTiguan.gearUp()
+    print(vwTiguan.currentGear)
+    
+    try vwTiguan.gearUp()
+    print(vwTiguan.currentGear)
+} catch CarGearError.ExceedMaximumNumberOfGears {
+    print("Exceeded Maximum Number of Gears in car")
+}
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1866}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
