@@ -1,0 +1,6 @@
+[submodule "Landmarks"]
+	path = Landmarks
+	url = git@github.com:ajmaradiaga/1DS-Landmarks.git
+[submodule "WeSplit"]
+	path = WeSplit
+	url = git@github.com:ajmaradiaga/1DS-WeSplit.git
