@@ -7,3 +7,6 @@
 [submodule "GuessTheFlag"]
 	path = GuessTheFlag
 	url = git@github.com:ajmaradiaga/1DS-GuessTheFlag.git
+[submodule "HackingWithSwift"]
+	path = HackingWithSwift
+	url = git@github.com:ajmaradiaga/HackingWithSwift.git
