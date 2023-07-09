@@ -4,3 +4,6 @@
 [submodule "WeSplit"]
 	path = WeSplit
 	url = git@github.com:ajmaradiaga/1DS-WeSplit.git
+[submodule "GuessTheFlag"]
+	path = GuessTheFlag
+	url = git@github.com:ajmaradiaga/1DS-GuessTheFlag.git
